@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Real-Time Code Editor</title>
+    <!-- Load Ace Editor library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.css">
+    <style>
+        body{
+            width:95%; 
+            margin: auto; 
+            font-family:"Helvetica Neue", "Arial";
+        }
+        #language-select{
+            margin-bottom:25px;
+        }
+        #code-editor { 
+            width: 100%; 
+            height: 60vh;
+        }
+        #run-button{ 
+            margin-top:25px;
+
+        }
+        #output {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            white-space: pre-wrap;
+            overflow-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <h1>Real-Time Code Editor</h1>
+    <select id="language-select">
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+    </select>
+    <div id="code-editor"></div>
+    <button id="run-button">Run Code</button>
+    <h2>Execution Result</h2>
+    <div id="output"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="/src/client.js"></script>
+</body>
+</html>

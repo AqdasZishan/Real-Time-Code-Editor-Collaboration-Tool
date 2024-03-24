@@ -1,0 +1,13 @@
+{
+  "name": "real-time-code-editor",
+  "version": "1.0.0",
+  "description": "Real-Time Code Editor and Collaboration Application",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "ws": "^8.5.0"
+  }
+}
