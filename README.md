@@ -1,8 +1,8 @@
 # Real-Time-Code-Editor-Collaboration-Tool
 
-To run type on terminal
-
 go to server folder
+
+To run go to terminal
 
 type : npm install
 
