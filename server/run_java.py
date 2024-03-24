@@ -48,6 +48,13 @@ def main():
         print(run_result.stdout)
     except Exception as e:
         print(f"Error executing code: {e}")
+    
+    finally:
+        # Remove all .class files in the directory and its subdirectories
+        for root, dirs, files in os.walk(classpath):
+            for file in files:
+                if file.endswith('.class'):
+                    os.remove(os.path.join(root, file))
 
 if __name__ == "__main__":
     main()
