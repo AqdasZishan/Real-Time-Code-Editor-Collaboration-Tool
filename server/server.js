@@ -65,9 +65,9 @@ wss.on('connection', function connection(ws) {
                     ws.send(`Runtime error: ${stderr}`);
                     return;
                 }
-                console.log(`Execution result:`);
-                console.log(stdout);
-                ws.send(`Execution result:`);
+                console.log(`Execution result:\n${stdout}`);
+                //console.log(stdout);
+                //ws.send(`Execution result:`);
                 ws.send(stdout);
             });
         }
