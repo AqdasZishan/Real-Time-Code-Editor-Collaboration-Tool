@@ -14,3 +14,7 @@ Update 3 :  [run_java.py]
 Update 4 :  [run_java.py]
             Now, it checks for both valid main method signatures, that are, 'public static void main(String[] args)' and 'public static void main(String args[])'.
             Earlier, only code with 'public static void main(String[] args)' line was getting excepting and for the second case 'Main method not found in the Java file' error was occuring.
+
+Update 5 :  [run_java.py]
+            Now, accepts the cases 'public static void main (String[] args)' in line or 'public static void main (String args[])' also.
+            There is space between 'main' and '()'.
