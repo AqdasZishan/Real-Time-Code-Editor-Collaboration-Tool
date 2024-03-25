@@ -22,8 +22,8 @@ Update 5 :  [run_java.py]
 Update 6 :  [run_java.py]
             Now, accepts all the valid cases of 'public static void main (String[] args)' and 'public static void main (String args[])'.
             There can be multiple spaces between the keywords and between and '(String[] args)' can have newline characters.
-	Now, it uses regular expression for find valid statement.
+	    Now, it uses regular expression for find valid statement.
 
 Update 7 :  [run_java.py]
-	Instead of haaving cleanup code in 'if' block at last now, it is in the try block for more robust error handling.
-	Earlier, if compilation error occured and '.class' files cleanup code is executed it gives error 'variable classpath referenced before assignment'.
+	    Instead of haaving cleanup code in 'if' block at last now, it is in the try block for more robust error handling.
+	    Earlier, if compilation error occured and '.class' files cleanup code is executed it gives error 'variable classpath referenced before assignment'.
