@@ -7,7 +7,7 @@ def extract_class_name(filename):
         lines = file.readlines()
         for i, line in enumerate(lines):
             # Check for both valid main method signatures
-            if 'public static void main(String[] args)' in line or 'public static void main(String args[])' in line:
+            if 'public static void main(String[] args)' in line or 'public static void main(String args[])' in line or 'public static void main (String[] args)' in line or 'public static void main (String args[])' in line:
                 # Look for the class declaration line before the main method
                 for j in range(i-1, -1, -1): # Reverse search from the current line
                     class_line = lines[j].strip()
