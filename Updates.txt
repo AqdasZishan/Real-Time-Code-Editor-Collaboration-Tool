@@ -1,12 +1,12 @@
-[run_java.py]
-Update 1 :  Removal of redundant code from run_java.py file.
+Update 1 :  [run_java.py]
+Removal of redundant code from run_java.py file.
 
-[run_java.py]
-Update 2 :  Now any valid class name can used for the class containing main function in java programmig language.
+Update 2 :  [run_java.py]
+            Now any valid class name can used for the class containing main function in java programmig language.
             Previously, class can only be named as 'Main'.
 
-[run_java.py]
-Update 3 :  'finally' is replaced with 'if' statement, resolving "classpath referenced before assignment" error.
-            Because the finally statement is getting executed and looking for classpath to delete the files with '.class' extention although because of the error in              the code, classpath was not getting created as compilation was not done and '.class' files are not created.
+Update 3 :  [run_java.py]
+            'finally' is replaced with 'if' statement, resolving "classpath referenced before assignment" error.
+            Because the finally statement is getting executed and looking for classpath to delete the files with '.class' extention although because of the error in the code, classpath was not getting created as compilation was not done and '.class' files are not created.
             And was displaying "classpath referenced before assignment" error instead of showing the syntax or compilation error.
-            Now, if statement will be executed only when there will be valid classpath, and the error in the execution, compilation or syntax will be displayed in                the result to the user.
+            Now, if statement will be executed only when there will be valid classpath, and the error in the execution, compilation or syntax will be displayed in the result to the user.
