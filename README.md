@@ -9,6 +9,3 @@ type : npm install
 type : npm start
 
 go to http://localhost:3000
-
-Java class containing main function should be named "Main"
-
