@@ -1,0 +1,8 @@
+Update 1 :  Now any valid class name can used for the class containing main function in java programmig language
+            Previously, class can only be named as 'Main'.
+
+Update 2 :  Also, finally is replaced with if statement.
+            Now, "classpath referenced before assignment" error resolved.
+            if statement will be executed only when there will be valid classpath 
+            and the error in the execution, syntax or code will be now displayed in the result
+            instead of displaying "classpath referenced before assignment".
