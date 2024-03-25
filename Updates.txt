@@ -3,7 +3,7 @@ Update 1 :  [run_java.py]
 
 Update 2 :  [run_java.py]
             Now any valid class name can used for the class containing main function in java programmig language.
-            Previously, class can only be named as 'Main'.
+            Previously, class containing main method can only be named as 'Main'.
 
 Update 3 :  [run_java.py]
             'finally' is replaced with 'if' statement, resolving "classpath referenced before assignment" error.
