@@ -10,3 +10,7 @@ Update 3 :  [run_java.py]
             Because the finally statement is getting executed and looking for classpath to delete the files with '.class' extention although because of the error in the code, classpath was not getting created as compilation was not done and '.class' files are not created.
             And was displaying "classpath referenced before assignment" error instead of showing the syntax or compilation error.
             Now, if statement will be executed only when there will be valid classpath, and the error in the execution, compilation or syntax will be displayed in the result to the user.
+
+Update 4 :  [run_java.py]
+            Now, it checks for both valid main method signatures, that are, 'public static void main(String[] args)' and 'public static void main(String args[])'.
+            Earlier, only code with 'public static void main(String[] args)' line was getting excepting and for the second case 'Main method not found in the Java file' error was occuring.
