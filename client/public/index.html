@@ -7,31 +7,70 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" type="text/javascript" charset="utf-8"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.min.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body{
-            width:95%; 
-            margin: auto; 
-            font-family:"Helvetica Neue", "Arial";
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            width: 95%; 
+            margin: auto;            
+        }
+        h1 {
+            font-size: 3rem;
+            color: #4d9ef5;
+            margin-bottom: 20px;
         }
         #language-select{
+            appearance: none;
+            width: 200px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            outline: none;
+            transition: all 0.3s ease;
             margin-bottom:25px;
         }
+        #language-select:hover {
+            border-color: #007bff;
+        }
         #code-editor { 
-            width: 100%; 
-            height: 60vh;
+            width: 100%;
+            border: 1px solid #eaeaea;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            height: 70vh;
         }
         #run-button{ 
-            margin-top:25px;
-
+            width: 150px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        #run-button:hover {
+            background-color: #0056b3;
         }
         #output {
-            margin-top: 20px;
+            background-color: #fff;
+            border: 1px solid #eaeaea;
+            border-radius: 4px;
+            padding: 5px 10px;
+            overflow-x: auto;
             margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            background-color: #f9f9f9;
+        }
+        #view {
             white-space: pre-wrap;
-            overflow-wrap: break-word;
+            word-wrap: break-word;
         }
     </style>
 </head>
@@ -41,10 +80,12 @@
         <option value="python">Python</option>
         <option value="java">Java</option>
     </select>
-    <div id="code-editor"></div>
     <button id="run-button">Run Code</button>
+    <div id="code-editor"></div>
     <h2>Execution Result</h2>
-    <div id="output"></div>
+    <div id="output">
+        <pre id="view"></pre>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
     <script src="/src/client.js"></script>
