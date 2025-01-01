@@ -1,4 +1,4 @@
-# Real-Time-Code-Editor-Collaboration-Tool
+# Code Editor & Compiler
 
 go to server folder
 
