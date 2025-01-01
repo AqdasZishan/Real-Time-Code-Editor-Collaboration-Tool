@@ -27,3 +27,13 @@ Update 6 :  [run_java.py]
 Update 7 :  [run_java.py]
 	    Instead of haaving cleanup code in 'if' block at last now, it is in the try block for more robust error handling.
 	    Earlier, if compilation error occured and '.class' files cleanup code is executed it gives error 'variable classpath referenced before assignment'.
+
+Update 8 : [index.html]
+	   Now, the run button is at top instead of being below code editor.
+	   <pre> tags are added in output for better display of the execution result.
+
+Update 9 : [index.html]
+	   Css and overall styling is updated.
+
+Update 10 : [client.js]
+	    The code highighting feature is fixed, the highlight changes with change of the programming language in real time.
