@@ -36,4 +36,4 @@ Update 9 : [index.html]
 	   Css and overall styling is updated.
 
 Update 10 : [client.js]
-	    The code highighting feature is fixed, the highlight changes with change of the programming language in real time.
+	    The code highlighting feature is fixed, the highlight changes with change of the programming language in real time.
